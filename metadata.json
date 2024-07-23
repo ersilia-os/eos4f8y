@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos4f8y",
+    "Slug": "one-molecule-mollib",
+    "Status": "In progress",
+    "Title": "One-molecule MolLib",
+    "Description": "MolLib is a low-resource generative model trained on ChEMBL data. It is able to generate drug-like and natural-product-like compounds. In this implementation, given an intial molecule, we first sample similar compounds and then we train the generator.",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,8 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": "Similarity",
+    "Publication": "https://www.nature.com/articles/s42256-020-0160-y",
+    "Source Code": "https://github.com/ETHmodlab/virtual_libraries",
+    "License": "GPL-3.0-only"
 }
