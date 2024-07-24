@@ -1,10 +1,13 @@
 import os
+import sys
 import shutil
 import configparser
 
-from ...utils.conda import SimpleConda
-
 root = os.path.dirname(os.path.abspath(__file__))
+
+sys.path.append(root)
+
+from simple_conda import SimpleConda
 
 MOLLIB_CONDA_ENVIRONMENT = "mollib"
 DATA_TAG = "my_molecules"
