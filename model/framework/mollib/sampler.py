@@ -68,3 +68,19 @@ class MollibSampler:
         molecules = self._read_molecules()
         self._clean()
         return molecules
+    
+
+if __name__ == '__main__':
+    import sys
+    import csv
+    file_name = sys.argv[1]
+    smiles_list = []
+    with open(file_name, "r") as f:
+        reader = csv.reader(f)
+        for r in reader:
+            smiles_list += [r[0]]
+    print("Input SMILES", smiles_list)
+    sampler = MollibSampler()
+    sampled_molecules = sampler.sample(smiles_list, 100)
+    print("These are the sampled molecules")
+    print(sampled_molecules)
