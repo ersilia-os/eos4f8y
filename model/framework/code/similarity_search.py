@@ -10,6 +10,8 @@ import subprocess
 import joblib
 import collections
 
+N_NEIGH = 50
+
 # parse arguments
 input_file = sys.argv[1]
 output_file = sys.argv[2]
@@ -64,8 +66,6 @@ with open(os.path.join(CHECKPOINTS_FOLDER, "reference_smiles.txt"), "r") as f:
     ref_smiles = []
     for r in reader:
         ref_smiles += [r[0]]
-
-N_NEIGH = 100
 
 # iterate over molecules
 outputs = []

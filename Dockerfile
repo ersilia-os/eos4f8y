@@ -1,9 +1,9 @@
-FROM bentoml/model-server:0.11.0-py310
+FROM bentoml/model-server:0.11.0-py37
 MAINTAINER ersilia
 
-RUN wget https://github.com/ersilia-os/eos4f8y/blob/main/model/framework/mollib/virtual_libraries/environment_linux.yml
+RUN wget https://raw.githubusercontent.com/ersilia-os/eos4f8y/main/model/framework/mollib/virtual_libraries/environment_linux.yml
 RUN conda config --set report_errors false
-RUN conda env create -f environment_linux.yml --force
+RUN conda env create -f environment_linux.yml -y
 RUN rm environment_linux.yml
 RUN pip install tqdm==4.66.2
 RUN pip install rdkit==2023.3.1

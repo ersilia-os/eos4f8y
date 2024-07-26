@@ -8,7 +8,6 @@ input_file = sys.argv[1]
 sim_file = sys.argv[2]
 output_file = sys.argv[3]
 
-N_SIMILAR = 50
 N_SAMPLED = 100
 
 # current file directory
